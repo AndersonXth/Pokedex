@@ -1,17 +1,23 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import './app.css'
-import Pokedexcard from "./Components/pokedexcard/PokedexCard";
+import PokedexCard from "./Components/pokedexcard/PokedexCard";
+import { useState } from "react";
 
 function App() {
+  const [pokedexCardVisivel,setpokedexCardVisivel] = useState(false)
+  const showPokedexCard = () => {
+    setpokedexCardVisivel(true)
+  }
+
+
   return (
     <>
       <div className="container">
         <div className="box-esquerda">
-          <Home/>    
+        <Home showPokedexCard = {() => setpokedexCardVisivel(true)} />
         </div>
         <div className="box-direita">
-          <Pokedexcard/>      
+          {pokedexCardVisivel && <PokedexCard/>}
         </div>
       </div>
     </>
