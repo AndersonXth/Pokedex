@@ -1,0 +1,46 @@
+.card{
+    width: 500px;
+    height: 600px;
+    background-color: #ffe28c;    
+    text-align: center;
+    flex-direction: row;
+    justify-content: center; 
+    display: block;
+}
+
+.card-imagem{
+    width: 350px;
+    height: 400px;
+    background-color: #171923;
+    margin: 20px auto;
+}
+
+.pokemon{
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    
+}
+
+input{
+    background-color: #ffe28c;
+    border-color: #635c41;
+    border-radius: 10px;
+    border-width: 4px;
+    margin: 5px;
+    color: #171923;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+}
+
+input::placeholder{
+    text-align: center;
+    justify-content: center;
+    color: #666a7d;
+}
+
+h4{
+    margin: 5px;
+}
