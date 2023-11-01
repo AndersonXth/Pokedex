@@ -1,18 +1,14 @@
 .card{
-    width: 500px;
     height: 600px;
+    width: 500px;
     background-color: #ffe28c;    
     text-align: center;
     flex-direction: row;
     justify-content: center; 
     display: block;
-}
-
-.card-imagem{
-    width: 350px;
-    height: 400px;
-    background-color: #171923;
-    margin: 20px auto;
+    background-image: url('/src/Pages/imagens/backgound_florest.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .pokemon{
@@ -20,7 +16,7 @@
     max-height: 250px;
     min-width: 250px;
     min-height: 250px;
-    
+    margin: 0 auto;
 }
 
 input{
@@ -43,4 +39,9 @@ input::placeholder{
 
 h4{
     margin: 5px;
+    color:  #ffe28c;
+}
+
+.nomePokemon{
+    margin: -20px 0px 0px 0px;
 }

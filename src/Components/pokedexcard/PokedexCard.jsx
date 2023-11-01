@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Pokedexcard (){
-    const [inputPokemonNome,setInputPokemonNome] = useState();
+    const [inputPokemonNome,setInputPokemonNome] = useState('');
     const [dataPokemon,setDataPokemon] = useState();
-    const [nomePokemon,setNomePokemon] = useState();
-    const [imagemPokemon,setImagemPokemon] = useState();
-    const [tipoPokemon,setTipoPokemon] = useState();
+    const [nomePokemon,setNomePokemon] = useState('charizard');
+    const [imagemPokemon,setImagemPokemon] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png');
+    const [tipoPokemon,setTipoPokemon] = useState('fire - flying');
     const buscarPokemon = async (inputPokemonNome) =>{
         try{
             const URL = `https://pokeapi.co/api/v2/pokemon/${inputPokemonNome.toLowerCase()}`
@@ -17,7 +17,7 @@ function Pokedexcard (){
             setTipoPokemon(response.data.types.map(type => type.type.name).join(' - '));
             setImagemPokemon(response.data.sprites.other['official-artwork'].front_default);
         } catch(error){
-            console.error('Erro',error);
+            console.error('Pokemon not found');
         }
     }
 
@@ -40,9 +40,9 @@ function Pokedexcard (){
             <div className="card">
                 <div className='card-imagem'>
                     <h2>Esse Pokemon é:</h2>
-                    <h1>{nomePokemon}</h1>
-                    <h2>{tipoPokemon}</h2>
-                    <img className='pokemon' src={imagemPokemon}></img>
+                    <h1 className='nomePokemon'>{nomePokemon}</h1>
+                    <h2>Seu tipo: {tipoPokemon}</h2>
+                    <img className='pokemon' src={imagemPokemon} alt='imagemPokemon'></img>
                 </div>
                 <div className='card-pesquisa'>
                     <h4>Procure o pokemon</h4>
