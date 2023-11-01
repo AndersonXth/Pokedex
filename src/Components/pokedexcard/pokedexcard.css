@@ -8,6 +8,7 @@
     background-image: url('/src/Pages/imagens/backgound_florest.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 30px;
 }
 
 .pokemon{

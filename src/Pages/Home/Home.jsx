@@ -8,7 +8,7 @@ function Home (mostrar){
             <br></br>
             <div className='botoes'>
                 <button onClick={mostrar.showPokedexCard}>POKEDEX</button>
-                <button>JOGOS DE PLATAFORMA</button>
+                <button onClick={mostrar.showJogosCard}>JOGOS DE PLATAFORMA</button>
             </div>
         </>
     )

@@ -4,7 +4,6 @@ import axios from "axios";
 
 function Pokedexcard (){
     const [inputPokemonNome,setInputPokemonNome] = useState('');
-    const [dataPokemon,setDataPokemon] = useState();
     const [nomePokemon,setNomePokemon] = useState('charizard');
     const [imagemPokemon,setImagemPokemon] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png');
     const [tipoPokemon,setTipoPokemon] = useState('fire - flying');
@@ -13,7 +12,6 @@ function Pokedexcard (){
             const URL = `https://pokeapi.co/api/v2/pokemon/${inputPokemonNome.toLowerCase()}`
             const response = await axios.get(URL);
             setNomePokemon(response.data.name);
-            setDataPokemon(response.data);
             setTipoPokemon(response.data.types.map(type => type.type.name).join(' - '));
             setImagemPokemon(response.data.sprites.other['official-artwork'].front_default);
         } catch(error){
