@@ -1,0 +1,19 @@
+ul{
+    width: 400px;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+    background-color: #FFC107;
+    color: #fff;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
+}

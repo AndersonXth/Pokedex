@@ -1,5 +1,5 @@
 body{
-    background-color: #171923;
+    background-color: black
 }
 
 .container{
@@ -9,7 +9,7 @@ body{
 .box-esquerda{
     width: 40vw;
     height: 100vh;
-
+    margin-top: 50px;
 }
 
 .box-direita{
@@ -20,4 +20,10 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+}
+
+.loading{
+    display: flex;
+    width: 200px;
+    height: 200px;
 }

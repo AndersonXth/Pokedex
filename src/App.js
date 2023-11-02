@@ -5,7 +5,11 @@ import Games from "./Components/Jogos/PokemonGames";
 import { useState } from "react";
 
 function App() {
-  const [cartaAtual, setCartaAtual] = useState(null);
+  const [cartaAtual, setCartaAtual] = useState('loading');
+
+  const showLoading = () => {
+    setCartaAtual('loading');
+  }
 
   const showPokedexCard = () => {
     setCartaAtual('pokedex');
@@ -22,6 +26,7 @@ function App() {
           <Home showPokedexCard={showPokedexCard} showJogosCard={showJogosCard} />
         </div>
         <div className="box-direita">
+          {cartaAtual === 'loading' && <img className="loading" src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-19.gif"></img>}
           {cartaAtual === 'pokedex' && <PokedexCard />}
           {cartaAtual === 'jogos' && <Games />}
         </div>
