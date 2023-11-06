@@ -8,7 +8,7 @@
 
 Como iniciar:
 - git clone https://github.com/AndersonXth/Pokedex.git
-- cd seu repositorio (pasta onde foi colocado o projeto)
+- cd local (pasta onde foi colocado o projeto)
 - npm install
 - npm start
 
