@@ -10,7 +10,7 @@ Começar inicializando o projeto React no terminarl:
 - Abrir o terminal e colocar o seguinte comando: npm create-react-app my-app;
 
 Bibliotecas usadas:
--npm install axios;
+- npm install axios;
 
 
 
