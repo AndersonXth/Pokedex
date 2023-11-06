@@ -7,10 +7,6 @@ import { useState } from "react";
 function App() {
   const [cartaAtual, setCartaAtual] = useState('loading');
 
-  const showLoading = () => {
-    setCartaAtual('loading');
-  }
-
   const showPokedexCard = () => {
     setCartaAtual('pokedex');
   };
