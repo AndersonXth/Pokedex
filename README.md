@@ -6,11 +6,17 @@
   <img align="center" alt="Anderson-CSS" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div><br>
 
-Começar inicializando o projeto React no terminarl:
-- Abrir o terminal e colocar o seguinte comando: npm create-react-app my-app;
+Como iniciar:
+- git clone https://github.com/AndersonXth/Pokedex.git
+- cd seu repositorio (pasta onde foi colocado o projeto)
+- npm install
+- npm start
 
 Bibliotecas usadas:
 - npm install axios;
 
+Projeto esse que tem como função:
+- Uma pokedex onde pode se procurar os pokemons pelo seu nome e número
+- Uma lista de jogos do Pokemon
 
 
